@@ -10,7 +10,7 @@
     position: relative;
     min-height: 75vh;
     height: fit-content;
-    width: 60vw;
+    width: 30vw;
     top: 5vh;
     display: flex;
     flex-direction: column;
