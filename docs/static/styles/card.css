@@ -1,111 +1,82 @@
-.parentContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100%;
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #000000;
+    --icon-color: #000000;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --border-color: #ffffff;
+    --icon-color: #ff7900;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.theme-toggle {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: var(--icon-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .cardMainDiv {
     position: relative;
     min-height: 75vh;
     height: fit-content;
-    width: 30vw; /* Default for desktop */
-    max-width: 90%; /* Ensures it doesn't overflow on smaller screens */
+    width: 30vw;
+    max-width: 90%;
     top: 5vh;
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
     padding: 2vw;
-    border: 5px solid black;
+    border: 5px solid var(--border-color);
     align-self: center;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
-.logoDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-}
-
-.infoDiv {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5vh;
-    position: relative;
-}
-
-.jobTitlesDiv {
-    display: flex;
-    flex-direction: column;
-    color: #ff7900;
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-.contactInfoDiv {
-    display: flex;
-    flex-direction: row; /* Ensure horizontal alignment */
-    justify-content: space-evenly;
-    position: relative;
-    gap: 1vw; /* Optional: Adjust spacing between icons */
-}
-
-.contactInfoCardDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    width: 30%;
-}
-
-.responsibiltyDiv {
-    display: flex;
-    flex-direction: row;
-    column-gap: 4vw;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-.ib-footer {
-    display: flex;
-    justify-content: center;
+.logoDiv, .infoDiv, .contactInfoDiv, .responsibiltyDiv, .ib-footer {
     text-align: center;
-}
-
-.fullNameLabel {
-    font-size: 1.7rem;
-    font-weight: bold;
-}
-
-p {
-    text-align: center;
-    font-size: 1.2rem;
-    word-wrap: break-word;
-    width: 100%;
 }
 
 .icons {
     font-size: 3rem;
+    color: var(--icon-color);
+}
+
+.contactInfoDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2vw;
+}
+
+.contactInfoCardDiv {
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
     .cardMainDiv {
-        width: 90%; /* Adjust for tablets and smaller screens */
-        padding: 5vw; /* Add extra padding for better appearance */
-    }
-
-    .jobTitlesDiv {
-        font-size: 1.2rem;
-    }
-
-    .fullNameLabel {
-        font-size: 1.4rem;
-    }
-
-    p {
-        font-size: 1rem;
+        width: 90%;
     }
 
     .icons {
@@ -114,40 +85,13 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-    .jobTitlesDiv {
-        font-size: 1rem;
-    }
-
-    .fullNameLabel {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .ib-footer {
-        font-size: 0.8rem;
-    }
-
     .contactInfoDiv {
-        flex-direction: row; /* Keep icons horizontal on mobile */
-        justify-content: center; /* Center the icons */
-        gap: 3vw; /* Adjust spacing for smaller screens */
-    }
-
-    .contactInfoCardDiv {
-        flex-direction: column; /* Optional: Only adjust this if needed for internal layout */
-        width: auto;
-        align-items: center; /* Center content inside cards */
+        flex-direction: row;
+        justify-content: center;
+        gap: 3vw;
     }
 
     .icons {
         font-size: 1.5rem;
-    }
-
-    .responsibiltyDiv {
-        flex-direction: column;
-        row-gap: 1vh;
     }
 }
