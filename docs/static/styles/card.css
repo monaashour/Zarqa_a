@@ -60,4 +60,93 @@
     width: 30%;
 }
 
-.respons
+.responsibiltyDiv {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4vw;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.ib-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fullNameLabel {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.icons {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .cardMainDiv {
+        width: 90%; /* Adjust for tablets and smaller screens */
+        padding: 5vw; /* Add extra padding for better appearance */
+    }
+
+    .jobTitlesDiv {
+        font-size: 1.2rem;
+    }
+
+    .fullNameLabel {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .icons {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .jobTitlesDiv {
+        font-size: 1rem;
+    }
+
+    .fullNameLabel {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .ib-footer {
+        font-size: 0.8rem;
+    }
+
+    .contactInfoDiv {
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    .contactInfoCardDiv {
+        flex-direction: row;
+        width: 100%;
+        column-gap: 2vw;
+    }
+
+    .icons {
+        font-size: 1.5rem;
+    }
+
+    .responsibiltyDiv {
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+}
