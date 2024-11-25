@@ -1,11 +1,11 @@
 var titles = [
-    'IB Automation',
-    'Intl Business & Sales Ops',
-    'International Business',
-    'Orange Business Services'
+    'Business Owner',
+    'FreeLancer',
+    '',
+    'Zarqa-a'
 ]
 var name = "Mona Ashour"
-var responsibilty = "Responsible for managing International Automation team"
+var responsibilty = "Graphic Designer & Product Marketing"
 
 var titlesDiv = document.getElementsByClassName("jobTitlesDiv")[0]
 for(var i=0; i<titles.length; i++) {
