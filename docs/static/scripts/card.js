@@ -1,8 +1,5 @@
 var titles = [
-    'Business Owner',
-    'FreeLancer',
-    '',
-    'Zarqa-a'
+    'Business Owner & FreeLancer',
 ]
 var name = "Mona Ashour"
 var responsibilty = "Graphic Designer & Product Marketing"
