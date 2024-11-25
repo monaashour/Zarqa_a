@@ -9,41 +9,32 @@
         <title>Business Card</title>
     </head>
     <body>
-        <div class="parentContainer">
-            <div class="cardMainDiv">
-                <div class="logoDiv"> <img src="./static/images/Zarqaai v3.0.png?raw=true" width="100" height="50"> </div>
-                <div class="infoDiv">
-                    <label class="fullNameLabel" id="fullName"></label>
-                    <br>
-                    <div class="jobTitlesDiv">
-                        <!-- 
-                        <label>Free Lancer</label>
-                        <label>Zarqa'a</label>
-                        <label></label>
-                        <label></label> -->
-                    </div>
-                </div>
-                <div class="contactInfoDiv">
-                    <div class="contactInfoCardDiv">
-                        <a class="icons" href="./static/media/contacts.vcf"><i class="fa fa-phone "  style=" color: gray;"></i></a>
-                    </div>
-                    <div class="contactInfoCardDiv">
-                        <a class="icons" href="mailto:mona.ashour@orange.com"><i class="fa fa-envelope" style=" color: gray;"></i>
-                        </a>
-                    </div>
-                    <div class="contactInfoCardDiv">
-                        <a class="icons" id="locationLink" href="https://www.google.com/maps/search/Cairo,Egypt: CityStars MSC, Cairo, Egypt" target="_blank"><i class="fa fa-map-marker" style=" color: gray;"></i></a>
-                    </div>    
-                </div>
-                <div style=" display: flex; justify-content: center; align-items: center; position: relative;">
-                    <p id="responsibiltyP" style="color: grey; text-align: center; font-weight: bold; word-wrap: break-word;width: 80%"></p>
-                </div>
-                <div class="responsibiltyDiv">
-                                        
-                </div>
-                <div class="ib-footer">Powered by&nbsp;<a style="color:#ff7900;" target="_blank" href="https://www.linkedin.com/in/mona-ashour-61570522"> Zarqua'a: The Prompt Lingo </a></div>
+    <div class="toggle-container">
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    </div>
+    <div class="parentContainer">
+        <div class="cardMainDiv">
+            <div class="logoDiv">
+                <h1>My Logo</h1>
+            </div>
+            <div class="infoDiv">
+                <h2 class="fullNameLabel">John Doe</h2>
+                <div class="jobTitlesDiv">Software Engineer</div>
+            </div>
+            <div class="contactInfoDiv">
+                <div class="contactInfoCardDiv"><i class="icons">📞</i><p>123-456-789</p></div>
+                <div class="contactInfoCardDiv"><i class="icons">✉️</i><p>email@example.com</p></div>
+                <div class="contactInfoCardDiv"><i class="icons">🌐</i><p>www.example.com</p></div>
+            </div>
+            <div class="responsibiltyDiv">
+                <p>Responsibilities and tasks</p>
+            </div>
+            <div class="ib-footer">
+                <p>Footer Information</p>
             </div>
         </div>
-    </body>
-    <script src="./static/scripts/card.js"></script>
+    </div>
+     <script src="./static/scripts/card.js"></script>
+</body>
+   
 </html>
