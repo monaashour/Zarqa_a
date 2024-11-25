@@ -46,10 +46,10 @@
 
 .contactInfoDiv {
     display: flex;
-    flex-direction: row;
-    column-gap: 4vw;
+    flex-direction: row; /* Ensure horizontal alignment */
     justify-content: space-evenly;
     position: relative;
+    gap: 1vw; /* Optional: Adjust spacing between icons */
 }
 
 .contactInfoCardDiv {
@@ -131,14 +131,15 @@ p {
     }
 
     .contactInfoDiv {
-        flex-direction: column;
-        row-gap: 1vh;
+        flex-direction: row; /* Keep icons horizontal on mobile */
+        justify-content: center; /* Center the icons */
+        gap: 3vw; /* Adjust spacing for smaller screens */
     }
 
     .contactInfoCardDiv {
-        flex-direction: row;
-        width: 100%;
-        column-gap: 2vw;
+        flex-direction: column; /* Optional: Only adjust this if needed for internal layout */
+        width: auto;
+        align-items: center; /* Center content inside cards */
     }
 
     .icons {
