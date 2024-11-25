@@ -2,7 +2,7 @@ var titles = [
     'Business Owner & FreeLancer',
 ]
 var name = "Mona Ashour"
-var responsibilty = "Graphic Design & Product Marketing"
+var responsibilty = "Data Insights, Graphic Design & Product Marketing"
 
 var titlesDiv = document.getElementsByClassName("jobTitlesDiv")[0]
 for(var i=0; i<titles.length; i++) {
