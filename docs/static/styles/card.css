@@ -8,13 +8,13 @@
 }
 .cardMainDiv{
     position: relative;
-    min-height: 85vh;
+    min-height: 75vh;
     height: fit-content;
-    width: 70vw;
+    width: 60vw;
     top: 5vh;
     display: flex;
     flex-direction: column;
-    row-gap: 8vh;
+    row-gap: 5vh;
     padding: 2vw;
     border: 5px solid black;
     align-self: center;
